@@ -1,5 +1,6 @@
 package com.bana.studentmanager.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -8,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Etudiant {
+public class Etudiant implements Serializable {
 	
 	@Id
 	@GeneratedValue
